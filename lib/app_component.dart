@@ -4,13 +4,12 @@
 import 'package:angular2/core.dart';
 import 'package:angular_components/angular_components.dart';
 
-import 'hello_dialog/hello_dialog.dart';
+import 'forms/dictionary_form.dart';
 
 @Component(
   selector: 'my-app',
-  styleUrls: const ['app_component.css'],
-  templateUrl: 'app_component.html',
-  directives: const [materialDirectives, HelloDialog],
+  template: '<dict-form></dict-form>',
+  directives: const [materialDirectives, DictionaryForm],
   providers: const [materialProviders],
 )
 class AppComponent {

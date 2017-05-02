@@ -8,6 +8,10 @@ const List<String> _dictType = const [
   'Русско-английский',
 ];
 
+@Component(
+  selector: 'dict-form',
+  templateUrl: 'dictionary_form.html'
+)
 class DictionaryForm{
 
   List<String> get dictType => _dictType;
@@ -18,5 +22,6 @@ class DictionaryForm{
     submitted = true;
   }
 
+ // TODO: Remove this when we're done
   String get diagnostic => '$model';
 }
