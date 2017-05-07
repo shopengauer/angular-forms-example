@@ -3,6 +3,7 @@ import 'package:angular2/platform/common.dart';
 import 'package:angular2/angular2.dart';
 
 import 'dictionary.dart';
+import 'package:angular_forms_example/directive/highlight_directve.dart';
 
 const List<String> _dictType = const [
   'Англо-русский',
@@ -14,7 +15,8 @@ const List<String> _dictType = const [
 
 @Component(
   selector: 'dict-form',
-  templateUrl: 'dictionary_form.html'
+  templateUrl: 'dictionary_form.html',
+  directives: const [HighlightDirective]
 )
 class DictionaryForm{
 

@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>Создать словарь</h1>
+    <h1 myHighlight>Создать словарь</h1>
     <div [hidden]="submitted">
         <form (ngSubmit)="onSubmit()" #dictForm="ngForm">
             {{diagnostic}}
@@ -21,7 +21,7 @@
                     <option *ngFor="let dt of dictType" [value]="dt">{{dt}}</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-default" [disabled]="!dictForm.form.valid">Submit</button>
+            <button type="submit" class="btn btn-outline-primary" [disabled]="!dictForm.form.valid">Создать</button>
         </form>
     </div>
 
